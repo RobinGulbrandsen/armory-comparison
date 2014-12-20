@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl">
+<head>
+  <title ng-bind="pageTitle"></title>
+  <meta charset="UTF-8">
+
+  <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+
+  <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+  rel='stylesheet' type='text/css'>
+
+</head>
+<section class="menu">
+  <div class="wrapper">
+    <div class="nav">
+      <a href="#/">Home</a>
+      <a href="#/search">Search</a>
+      <a href="#/about">About</a>
+  </div>
+</section>
+<body>
+  <div ui-view="main"></div>
+</body>
+
+<footer>
+  <p>Inspired by Armory and WowHead <br/> Created by Nightwìng of Twisting-Nether <br />Contact: robin@123.no</p>
+</footer>
+</html>

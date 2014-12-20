@@ -1,0 +1,67 @@
+/*
+  Import variables
+*/
+@import 'variables.less';
+
+/*
+  Import 3rd party libs
+  @import '../../vendor/bootstrap/less/bootstrap.less';
+*/
+
+/*
+  Import sub page less files
+*/
+@import '../app/result/result.less';
+@import '../app/search/search.less';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+p, h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	color: @armory-white;
+}
+
+h1, h2, h3, h4 {
+	color: @armory-orange;
+}
+
+.menu {
+	width: 100%;
+	height: 45px;
+	background-color: @background-dark;
+
+	.wrapper {
+		margin: auto;
+		width: 775px;
+
+		.nav {
+			background-image: url('img/logo.png');
+			background-position: left;
+			background-repeat: no-repeat;
+			padding-left: 260px;
+		}	
+
+		a {
+			font-size: 14px;
+			line-height: 45px;
+			vertical-align: middle;
+			color: @armory-white;
+			font-size: 20px;
+			font-weight: bold;
+			text-decoration: none;
+			margin-left: 25px;
+		}
+
+		a:hover {
+			color: @armory-orange;
+		}
+	}
+}

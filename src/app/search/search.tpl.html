@@ -1,0 +1,61 @@
+<div class="field search">
+	<p class="title">Search</p>
+	<div class="form">
+		<div class="formgroup">
+			<label>Region:</label>
+			<select data-ng-model="form.region" data-ng-options="region.name for region in regions"></select>
+		</div>
+		<div class="formgroup">
+			<label>Server:</label>
+			<select data-ng-model="form.server" data-ng-options="region.name for region in regions"></select>
+		</div>
+		<div class="formgroup">
+			<label>Guildname:</label>
+			<input type="text" data-ng-model="form.guild">
+		</div>	
+		<button>Search</button>
+	</div>
+</div>
+<div class="field filter">
+	<p class="title">Filter</p>
+	<div class="formgroup">
+		<label>Level:</label>
+		<input type="number">
+	</div>
+	<div class="formgroup">
+		<label>Class:</label>
+		<select data-ng-model="selectedClass" data-ng-options="class.name for class in classes | orderBy: 'name'"></select>
+	</div>
+</div>
+<div class="field search-result">
+	<div class="search-result-options">
+
+	</div>
+	<div class="search-result-list">
+		<table id="result-list">
+			<thead>
+				<tr>
+					<td>Add</td>
+					<td>Level</td>
+					<td>Name</td>
+					<td>Guild</td>
+					<td>Server</td>
+					<td>Battle Group</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="search-result-element" data-ng-repeat="member in members | orderBy:'character.name'" data-ng-click="addCharacter(member, active)">
+					<td><div class="checkbox" data-ng-class="{'active':active}" data-ng-click="active = !active"></div></td>
+					<td>{{member.character.level}}</td>
+					<td class="classColor{{member.character.class}}">{{member.character.name}}</td>
+					<td>{{member.character.guild}}</td>
+					<td>{{member.character.realm}}</td>
+					<td>{{member.character.battlegroup}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="field complete-button">
+	<button>Ok</button>
+</div>

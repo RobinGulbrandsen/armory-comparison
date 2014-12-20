@@ -1,0 +1,571 @@
+/*
+  Import variables
+*/
+/*	
+	Eksample of a variable
+	@main-background-color: #123;
+*/
+/*
+  Import 3rd party libs
+  @import '../../vendor/bootstrap/less/bootstrap.less';
+*/
+/*
+  Import sub page less files
+*/
+body {
+  background-color: #000;
+  background-image: url('img/result/bg-image.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #c09a67;
+  opacity: 0.5;
+}
+span {
+  margin: 0px;
+  padding: 0px;
+}
+.armory-orange {
+  color: #c09a67;
+}
+.armory-white {
+  color: #f5ebd1;
+}
+.results {
+  width: 100%;
+  height: 770px;
+  background-image: url('img/result/bg-default.png');
+  background-repeat: repeat-x;
+  background-position: 0px 60px;
+  opacity: 0.5;
+}
+.color {
+  color: #c09a67;
+}
+.color0 {
+  color: #112233;
+}
+.color1 {
+  color: #ffffff;
+}
+.color2 {
+  color: #112233;
+}
+.color3 {
+  color: #007bd3;
+}
+.color4 {
+  color: #b103f6;
+}
+.color5 {
+  color: #112233;
+}
+.boderColor0 {
+  border: 1px solid #112233;
+}
+.borderColor1 {
+  border: 1px solid #ffffff;
+}
+.boderColor2 {
+  border: 1px solid #112233;
+}
+.borderColor3 {
+  border: 1px solid #007bd3;
+}
+.borderColor4 {
+  border: 1px solid #b103f6;
+}
+.borderColor5 {
+  border: 1px solid #112233;
+}
+.item {
+  background-image: url('img/result/item.png');
+}
+.item-big {
+  cursor: pointer;
+  background-size: 50px 50px;
+  height: 50px;
+  width: 50px;
+}
+.item-small {
+  background-size: 25px 25px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.image-placeholder {
+  margin-left: 3px;
+  margin-top: 4px;
+  position: absolute;
+  border-radius: 2px;
+  width: 42px;
+  height: 41px;
+}
+.result-element {
+  width: 500px;
+  height: 700px;
+  float: left;
+  margin: 10px;
+}
+.result-element .char-name {
+  height: 50px;
+  line-height: 50px;
+  color: rgba(20, 20, 20, 0.8);
+}
+.result-element .char-name .sigil {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+.result-element .char-name .name {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.result-element .char-name .guild {
+  color: #ffb100;
+  margin-left: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.result-element .char-name .iLvl {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  width: 75px;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: right;
+  margin-top: 35px;
+}
+.result-element .top {
+  height: 400px;
+  background-color: rgba(65, 65, 65, 0.8);
+  background-size: 100% 100%;
+}
+.result-element .top .left {
+  float: left;
+}
+.result-element .top .right {
+  float: right;
+}
+.result-element .top .middle {
+  width: 200px;
+  padding-top: 290px;
+  margin-left: 190px;
+}
+.result-element .top .middle .item {
+  float: left;
+  margin-left: 10px;
+}
+.result-element .top .item {
+  border-radius: 3px;
+}
+.result-element .top .item img {
+  height: 41px;
+  width: 42px;
+  border-radius: 1px;
+}
+.result-element .top .info {
+  padding-top: 10px;
+  width: 275px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 125px;
+}
+.result-element .top .info .spesialization {
+  float: right;
+}
+.result-element .bottom {
+  background-color: rgba(20, 20, 20, 0.8);
+  height: 300px;
+  border-radius: 2px;
+}
+.result-element .bottom .bottom-left {
+  float: left;
+  width: 240px;
+  height: 290px;
+  margin: 4px;
+}
+.result-element .bottom .bottom-left p {
+  margin: 0px;
+  padding: 0px;
+}
+.result-element .bottom .bottom-left .title {
+  color: #ffb100;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.result-element .bottom .bottom-left .health {
+  color: white;
+  background-color: #258300;
+  border-radius: 4px;
+}
+.result-element .bottom .bottom-left .health p {
+  padding-left: 20px;
+}
+.result-element .bottom .bottom-left .health p span {
+  font-weight: bold;
+}
+.result-element .bottom .bottom-left table {
+  width: 100%;
+}
+.result-element .bottom .bottom-left table tr {
+  width: 100%;
+}
+.result-element .bottom .bottom-left table tr .first {
+  width: 75%;
+}
+.result-element .bottom .bottom-left table tr .second {
+  width: 25%;
+}
+.result-element .bottom .bottom-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.result-element .bottom .bottom-right .glyphs p {
+  color: #ffb100;
+  opacity: 0.7;
+  width: 115;
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 15px;
+}
+.result-element .bottom .bottom-right .glyphs .glyph-group {
+  float: left;
+  width: 49%;
+  margin-left: 0.5%;
+}
+.result-element .bottom .bottom-right .talents {
+  margin-top: 55px;
+  width: 100%;
+}
+.result-element .bottom .bottom-right .talents p {
+  color: #ffb100;
+  margin: 0px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.result-element .bottom .bottom-right .talents .talent {
+  clear: both;
+  margin-left: 10px;
+  height: 25px;
+}
+.result-element .bottom .bottom-right .talents .talent p {
+  color: #c09a67;
+  line-height: 25px;
+  margin-left: 30px;
+  font-size: 12px;
+  width: 200px;
+  text-decoration: none;
+}
+.result-element .bottom .remove {
+  clear: both;
+  width: 100%;
+  height: 10px;
+}
+.result-element .bottom .remove button {
+  float: right;
+  height: 10px;
+}
+.result-element .bottom .remove:hover {
+  background-color: blue;
+}
+.glyph {
+  float: left;
+  margin: 2px;
+  margin-left: 10px;
+}
+.glyph img {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 2px;
+  width: 21px;
+  height: 21px;
+}
+/* Tooltip */
+.tooltipcontainer {
+  position: relative;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  min-height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #CFCFCF;
+  background-color: rgba(7, 12, 33, 0.96);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.tooltip-big {
+  top: 3px;
+  left: 50px;
+}
+.tooltip-small {
+  top: -25px;
+  left: 30px;
+}
+.tooltip-wep {
+  top: 290px;
+  left: 66px;
+}
+.tooltip-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.tooltip-ilvl {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ffb100;
+}
+.tooltip-text {
+  font-size: 12px;
+  text-decoration: none;
+  color: #f5ebd1;
+}
+a:hover .tooltip {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c09a67;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+button {
+  -moz-box-shadow: 1px 1px 0px 0px #000;
+  -webkit-box-shadow: 1px 1px 0px 0px #000;
+  box-shadow: 1px 1px 0px 0px #000;
+  background-color: #c09a67;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid rgba(40, 40, 40, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  color: #f5ebd1;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 5px;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px #2f6627;
+  min-width: 60px;
+}
+button:hover {
+  background-color: #a8865a;
+}
+button:active {
+  position: relative;
+  top: 1px;
+  -moz-box-shadow: 0px 1px 0px 0px #000;
+  -webkit-box-shadow: 0px 1px 0px 0px #000;
+  box-shadow: 0px 1px 0px 0px #000;
+}
+button:focus {
+  outline: 0;
+}
+input[type=text],
+input[type=number] {
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 3px;
+  border-color: #41423d;
+  color: #ffb100;
+  width: 161px;
+}
+input[type=text]::selection,
+input[type=number]::selection {
+  background: #c09a67;
+}
+input[type=text]::-moz-selection,
+input[type=number]::-moz-selection {
+  background: #c09a67;
+}
+input:focus {
+  outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+select {
+  height: 20px;
+  border-radius: 2px;
+  border-color: #41423d;
+  color: #ffb100;
+  -webkit-appearance: none;
+  min-width: 165px;
+  background: url('img/arrow-down.png') no-repeat right rgba(20, 20, 20, 0.8);
+  background-size: 10px 10px;
+}
+select:focus {
+  outline: 0;
+}
+select:hover {
+  cursor: pointer;
+}
+.checkbox {
+  height: 18px;
+  width: 18px;
+  background-image: url('img/result/item.png');
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.active {
+  background-image: url('img/checkbox-selected.png');
+}
+.classColor1 {
+  color: #c69b6d;
+}
+.classColor2 {
+  color: #f48cba;
+}
+.classColor3 {
+  color: #aad372;
+}
+.classColor4 {
+  color: #fff468;
+}
+.classColor5 {
+  color: #f0ebe0;
+}
+.classColor6 {
+  color: #c41e3b;
+}
+.classColor7 {
+  color: #2359ff;
+}
+.classColor8 {
+  color: #68ccef;
+}
+.classColor9 {
+  color: #9382c9;
+}
+.classColor10 {
+  color: #00ffba;
+}
+.classColor11 {
+  color: #ff7c0a;
+}
+.field {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgba(20, 20, 20, 0.8);
+  width: 800px;
+}
+.form {
+  min-height: 30px;
+}
+.formgroup {
+  color: #c09a67;
+  margin-top: 3px;
+}
+.formgroup label {
+  display: inline-block;
+  width: 100px;
+}
+.search-result-list {
+  width: 100%;
+  height: 700px;
+  overflow-y: scroll;
+  display: block;
+}
+.search-result-list table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.search-result-list thead {
+  color: #ffb100;
+  font-weight: bold;
+}
+.search-result-list tbody {
+  color: #dbd2bc;
+}
+.search-result-list tbody tr:nth-child(even) {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+.search-result-list tbody tr:hover {
+  background-color: #a8865a;
+  cursor: default;
+}
+.complete-button {
+  height: 20px;
+}
+.complete-button button {
+  float: right;
+}
+.title {
+  color: #ffb100;
+  font-weight: bold;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+p,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  color: #f5ebd1;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #c09a67;
+}
+.menu {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(20, 20, 20, 0.8);
+}
+.menu .wrapper {
+  margin: auto;
+  width: 775px;
+}
+.menu .wrapper .nav {
+  background-image: url('img/logo.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 260px;
+}
+.menu .wrapper a {
+  font-size: 14px;
+  line-height: 45px;
+  vertical-align: middle;
+  color: #f5ebd1;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.menu .wrapper a:hover {
+  color: #c09a67;
+}

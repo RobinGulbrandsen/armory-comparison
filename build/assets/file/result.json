@@ -1,0 +1,858 @@
+{
+    "lastModified": 1416674517000,
+    "name": "Nightwìng",
+    "realm": "Twisting Nether",
+    "battlegroup": "Sturmangriff / Charge",
+    "class": 4,
+    "race": 5,
+    "gender": 0,
+    "level": 100,
+    "achievementPoints": 8795,
+    "thumbnail": "internal-record-3674/178/104554162-avatar.jpg",
+    "calcClass": "c",
+    "guild": {
+        "name": "Blacklight",
+        "realm": "Twisting Nether",
+        "battlegroup": "Sturmangriff / Charge",
+        "members": 287,
+        "achievementPoints": 2065,
+        "emblem": {
+            "icon": 100,
+            "iconColor": "ffb1b8b1",
+            "border": 1,
+            "borderColor": "ffffffff",
+            "backgroundColor": "ff232323"
+        }
+    },
+    "items": {
+        "averageItemLevel": 632,
+        "averageItemLevelEquipped": 631,
+        "head": {
+            "id": 109979,
+            "name": "Blackwater Helm",
+            "icon": "inv_leather_draenordungeon_c_01helm",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 111
+                },
+                {
+                    "stat": 40,
+                    "amount": 111
+                },
+                {
+                    "stat": 73,
+                    "amount": 167
+                },
+                {
+                    "stat": 7,
+                    "amount": 251
+                }
+            ],
+            "armor": 109,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "neck": {
+            "id": 109953,
+            "name": "Windseal Necklace",
+            "icon": "inv_60dungeon_neck1c",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 48
+                },
+                {
+                    "stat": 3,
+                    "amount": 94
+                },
+                {
+                    "stat": 36,
+                    "amount": 72
+                },
+                {
+                    "stat": 7,
+                    "amount": 141
+                }
+            ],
+            "armor": 0,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "shoulder": {
+            "id": 109935,
+            "name": "Bloodfeather Spaulders",
+            "icon": "inv_leather_draenordungeon_c_01shoulder",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 32,
+                    "amount": 96
+                },
+                {
+                    "stat": 73,
+                    "amount": 126
+                },
+                {
+                    "stat": 36,
+                    "amount": 64
+                },
+                {
+                    "stat": 7,
+                    "amount": 189
+                }
+            ],
+            "armor": 100,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "back": {
+            "id": 116814,
+            "name": "Tura'aka's Clipped Wing",
+            "icon": "inv_cape_draenorquest95_b_07_leather",
+            "quality": 3,
+            "itemLevel": 609,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 49,
+                    "amount": 55
+                },
+                {
+                    "stat": 3,
+                    "amount": 77
+                },
+                {
+                    "stat": 36,
+                    "amount": 46
+                },
+                {
+                    "stat": 7,
+                    "amount": 116
+                }
+            ],
+            "armor": 38,
+            "context": "",
+            "bonusLists": []
+        },
+        "chest": {
+            "id": 109884,
+            "name": "Chestguard of Burning Focus",
+            "icon": "inv_leather_draenordungeon_c_01chest",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 103
+                },
+                {
+                    "stat": 32,
+                    "amount": 116
+                },
+                {
+                    "stat": 73,
+                    "amount": 167
+                },
+                {
+                    "stat": 7,
+                    "amount": 251
+                }
+            ],
+            "armor": 134,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "tabard": {
+            "id": 43156,
+            "name": "Tabard of the Wyrmrest Accord",
+            "icon": "inv_shirt_guildtabard_01",
+            "quality": 1,
+            "itemLevel": 75,
+            "tooltipParams": {},
+            "stats": [],
+            "armor": 0,
+            "context": "",
+            "bonusLists": []
+        },
+        "wrist": {
+            "id": 109870,
+            "name": "Crystalbinder Wristguards",
+            "icon": "inv_leather_draenordungeon_c_01bracer",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 66
+                },
+                {
+                    "stat": 49,
+                    "amount": 57
+                },
+                {
+                    "stat": 73,
+                    "amount": 94
+                },
+                {
+                    "stat": 7,
+                    "amount": 141
+                }
+            ],
+            "armor": 59,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "hands": {
+            "id": 109850,
+            "name": "Crystalbinder Gloves",
+            "icon": "inv_leather_draenordungeon_c_01glove",
+            "quality": 3,
+            "itemLevel": 636,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 32,
+                    "amount": 94
+                },
+                {
+                    "stat": 49,
+                    "amount": 80
+                },
+                {
+                    "stat": 73,
+                    "amount": 133
+                },
+                {
+                    "stat": 7,
+                    "amount": 199
+                }
+            ],
+            "armor": 86,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                499,
+                523,
+                524
+            ]
+        },
+        "waist": {
+            "id": 109830,
+            "name": "Bloodfeather Girdle",
+            "icon": "inv_leather_draenordungeon_c_01belt",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 49,
+                    "amount": 76
+                },
+                {
+                    "stat": 73,
+                    "amount": 126
+                },
+                {
+                    "stat": 36,
+                    "amount": 89
+                },
+                {
+                    "stat": 7,
+                    "amount": 189
+                }
+            ],
+            "armor": 75,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "legs": {
+            "id": 109809,
+            "name": "Legguards of Burning Focus",
+            "icon": "inv_leather_draenordungeon_c_01pant",
+            "quality": 3,
+            "itemLevel": 636,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 32,
+                    "amount": 126
+                },
+                {
+                    "stat": 73,
+                    "amount": 177
+                },
+                {
+                    "stat": 36,
+                    "amount": 103
+                },
+                {
+                    "stat": 7,
+                    "amount": 265
+                }
+            ],
+            "armor": 121,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                499,
+                524
+            ]
+        },
+        "feet": {
+            "id": 109799,
+            "name": "Blackwater Boots",
+            "icon": "inv_leather_draenordungeon_c_01boot",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 49,
+                    "amount": 64
+                },
+                {
+                    "stat": 73,
+                    "amount": 126
+                },
+                {
+                    "stat": 36,
+                    "amount": 96
+                },
+                {
+                    "stat": 7,
+                    "amount": 189
+                }
+            ],
+            "armor": 92,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "finger1": {
+            "id": 109759,
+            "name": "Ro-Ger's Brown Diamond Seal",
+            "icon": "inv_60dungeon_ring2c",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 49,
+                    "amount": 63
+                },
+                {
+                    "stat": 32,
+                    "amount": 63
+                },
+                {
+                    "stat": 3,
+                    "amount": 94
+                },
+                {
+                    "stat": 7,
+                    "amount": 141
+                }
+            ],
+            "armor": 0,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                523,
+                524
+            ]
+        },
+        "finger2": {
+            "id": 118297,
+            "name": "Timeless Solium Band of the Assassin",
+            "icon": "inv_misc_6oring_redlv2",
+            "quality": 4,
+            "itemLevel": 680,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 40,
+                    "amount": 93
+                },
+                {
+                    "stat": 32,
+                    "amount": 104
+                },
+                {
+                    "stat": 3,
+                    "amount": 150
+                },
+                {
+                    "stat": 7,
+                    "amount": 225
+                }
+            ],
+            "armor": 0,
+            "context": "quest-reward",
+            "bonusLists": []
+        },
+        "trinket1": {
+            "id": 118246,
+            "name": "Call of the Wolfmother",
+            "icon": "ability_shaman_freedomwolf",
+            "quality": 4,
+            "itemLevel": 615,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 138
+                }
+            ],
+            "armor": 0,
+            "context": "",
+            "bonusLists": [
+                545
+            ]
+        },
+        "trinket2": {
+            "id": 109998,
+            "name": "Gor'ashan's Lodestone Spike",
+            "icon": "inv_rod_adamantite",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 3,
+                    "amount": 159
+                }
+            ],
+            "armor": 0,
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "mainHand": {
+            "id": 118738,
+            "name": "Felshanker",
+            "icon": "inv_weapon_shortblade_25",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 59,
+                    "amount": 54
+                },
+                {
+                    "stat": 49,
+                    "amount": 36
+                },
+                {
+                    "stat": 3,
+                    "amount": 72
+                },
+                {
+                    "stat": 7,
+                    "amount": 107
+                }
+            ],
+            "armor": 0,
+            "weaponInfo": {
+                "damage": {
+                    "min": 294,
+                    "max": 546,
+                    "exactMin": 294,
+                    "exactMax": 546
+                },
+                "weaponSpeed": 1.8,
+                "dps": 233.33334
+            },
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        },
+        "offHand": {
+            "id": 110038,
+            "name": "Ner'zhul's Ritual Blade",
+            "icon": "inv_knife_1h_draenordungeon_c_02",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [
+                {
+                    "stat": 49,
+                    "amount": 48
+                },
+                {
+                    "stat": 3,
+                    "amount": 72
+                },
+                {
+                    "stat": 36,
+                    "amount": 48
+                },
+                {
+                    "stat": 7,
+                    "amount": 107
+                }
+            ],
+            "armor": 0,
+            "weaponInfo": {
+                "damage": {
+                    "min": 294,
+                    "max": 546,
+                    "exactMin": 294,
+                    "exactMax": 546
+                },
+                "weaponSpeed": 1.8,
+                "dps": 233.33334
+            },
+            "context": "dungeon-heroic",
+            "bonusLists": [
+                524
+            ]
+        }
+    },
+    "stats": {
+        "health": 204060,
+        "powerType": "energy",
+        "power": 100,
+        "str": 1205,
+        "agi": 3698,
+        "int": 709,
+        "sta": 3401,
+        "speedRating": 0,
+        "speedRatingBonus": 0,
+        "crit": 20.445454,
+        "critRating": 599,
+        "haste": 10.438988,
+        "hasteRating": 518,
+        "hasteRatingPercent": 5.18,
+        "mastery": 37.063637,
+        "masteryRating": 479,
+        "spr": 538,
+        "bonusArmor": 0,
+        "multistrike": 13.272727,
+        "multistrikeRating": 13.272727,
+        "multistrikeRatingBonus": 8.272727,
+        "leech": 0,
+        "leechRating": 0,
+        "leechRatingBonus": 0,
+        "versatility": 204,
+        "versatilityDamageDoneBonus": 1.569231,
+        "versatilityHealingDoneBonus": 1.569231,
+        "versatilityDamageTakenBonus": 0.784615,
+        "avoidanceRating": 0,
+        "avoidanceRatingBonus": 0,
+        "spellPower": 709,
+        "spellPen": 0,
+        "spellCrit": 20.445454,
+        "spellCritRating": 599,
+        "mana5": 0,
+        "mana5Combat": 0,
+        "armor": 814,
+        "dodge": 15.647321,
+        "dodgeRating": 0,
+        "parry": 3,
+        "parryRating": 0,
+        "block": 0,
+        "blockRating": 0,
+        "mainHandDmgMin": 2230,
+        "mainHandDmgMax": 2487,
+        "mainHandSpeed": 1.63,
+        "mainHandDps": 1446.7872,
+        "offHandDmgMin": 1115,
+        "offHandDmgMax": 1244,
+        "offHandSpeed": 1.63,
+        "offHandDps": 723.3936,
+        "rangedDmgMin": -1,
+        "rangedDmgMax": -1,
+        "rangedSpeed": -1,
+        "rangedDps": -1,
+        "attackPower": 3698,
+        "rangedAttackPower": 3698
+    },
+    "talents": [
+        {
+            "talents": [
+                {
+                    "tier": 0,
+                    "column": 2,
+                    "spell": {
+                        "id": 108209,
+                        "name": "Shadow Focus",
+                        "icon": "rogue_shadowfocus",
+                        "description": "Abilities cost 75% less Energy while you are stealthed.",
+                        "castTime": "Passive"
+                    }
+                },
+                {
+                    "tier": 1,
+                    "column": 0,
+                    "spell": {
+                        "id": 26679,
+                        "name": "Deadly Throw",
+                        "subtext": "Talent",
+                        "icon": "inv_throwingknife_06",
+                        "description": "Finishing move that deals damage, reduces the target's movement speed by 50% for 6 sec, and interrupts spellcasting when used with 5 combo pioints:\n\n   1 point  : 609 damage\n\n   2 points: 1,218 damage\n\n   3 points: 1,827 damage\n\n   4 points: 2,436 damage\n\n   5 points: 3,045 damage",
+                        "range": "30 yd range",
+                        "powerCost": "35 Energy",
+                        "castTime": "Instant"
+                    }
+                },
+                {
+                    "tier": 3,
+                    "column": 1,
+                    "spell": {
+                        "id": 36554,
+                        "name": "Shadowstep",
+                        "icon": "ability_rogue_shadowstep",
+                        "description": "Step through the shadows to appear behind your target and gain 70% movement speed for 2 sec.",
+                        "range": "25 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "20 sec cooldown"
+                    }
+                },
+                {
+                    "tier": 2,
+                    "column": 1,
+                    "spell": {
+                        "id": 108211,
+                        "name": "Leeching Poison",
+                        "icon": "rogue_leeching_poison",
+                        "description": "Coats your weapons with a Non-Lethal Poison that lasts for 1 hour.  Your melee attacks have a 50% chance to poison the target for 12 sec, causing subsequent melee attacks to heal you for 15% of damage dealt.",
+                        "castTime": "3 sec cast"
+                    }
+                },
+                {
+                    "tier": 4,
+                    "column": 0,
+                    "spell": {
+                        "id": 131511,
+                        "name": "Prey on the Weak",
+                        "icon": "ability_rogue_preyontheweak",
+                        "description": "Enemies disabled with your Kidney Shot, Cheap Shot, Gouge, Sap, or Blind take 10% increased damage from all sources.",
+                        "castTime": "Passive"
+                    }
+                },
+                {
+                    "tier": 5,
+                    "column": 1,
+                    "spell": {
+                        "id": 137619,
+                        "name": "Marked for Death",
+                        "icon": "achievement_bg_killingblow_berserker",
+                        "description": "Mark the target, instantly generating 5 combo points.  Cooldown reset if the target dies within 1 min.",
+                        "range": "30 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "1 min cooldown"
+                    }
+                },
+                {
+                    "tier": 6,
+                    "column": 1,
+                    "spell": {
+                        "id": 152151,
+                        "name": "Shadow Reflection",
+                        "icon": "rogue_shadow_reflection",
+                        "description": "Summon a shadow of yourself on the target that will watch you and memorize your offensive ability usage for the next 8 sec. After this time, it will mimic the memorized abilities on its target over the next 8 sec.",
+                        "range": "20 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "2 min cooldown"
+                    }
+                }
+            ],
+            "glyphs": {
+                "major": [],
+                "minor": [
+                    {
+                        "glyph": 468,
+                        "item": 43379,
+                        "name": "Glyph of Blurred Speed",
+                        "icon": "ability_rogue_sprint"
+                    },
+                    {
+                        "glyph": 469,
+                        "item": 43380,
+                        "name": "Glyph of Poisons",
+                        "icon": "trade_brewpoison"
+                    }
+                ]
+            },
+            "spec": {
+                "name": "Assassination",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-assassination",
+                "icon": "ability_rogue_eviscerate",
+                "description": "A deadly master of poisons who dispatches victims with vicious dagger strikes.",
+                "order": 0
+            },
+            "calcTalent": "2011011",
+            "calcSpec": "a",
+            "calcGlyph": "kP"
+        },
+        {
+            "selected": true,
+            "talents": [
+                {
+                    "tier": 0,
+                    "column": 2,
+                    "spell": {
+                        "id": 108209,
+                        "name": "Shadow Focus",
+                        "icon": "rogue_shadowfocus",
+                        "description": "Abilities cost 75% less Energy while you are stealthed.",
+                        "castTime": "Passive"
+                    }
+                },
+                {
+                    "tier": 1,
+                    "column": 2,
+                    "spell": {
+                        "id": 74001,
+                        "name": "Combat Readiness",
+                        "icon": "ability_rogue_combatreadiness",
+                        "description": "Enter a state of heightened defensive awareness. Each successive weapon attack will deal 10% less damage, stacking 5 times.  Lasts 20 sec or until not attacked with weapons for 10 sec.",
+                        "castTime": "Instant",
+                        "cooldown": "2 min cooldown"
+                    }
+                },
+                {
+                    "tier": 2,
+                    "column": 2,
+                    "spell": {
+                        "id": 79008,
+                        "name": "Elusiveness",
+                        "subtext": "Passive Talent",
+                        "icon": "ability_rogue_turnthetables",
+                        "description": "Feint also reduces all damage you take by 30% for 5 sec.",
+                        "castTime": "Passive"
+                    }
+                },
+                {
+                    "tier": 3,
+                    "column": 1,
+                    "spell": {
+                        "id": 36554,
+                        "name": "Shadowstep",
+                        "icon": "ability_rogue_shadowstep",
+                        "description": "Step through the shadows to appear behind your target and gain 70% movement speed for 2 sec.",
+                        "range": "25 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "20 sec cooldown"
+                    }
+                },
+                {
+                    "tier": 4,
+                    "column": 0,
+                    "spell": {
+                        "id": 131511,
+                        "name": "Prey on the Weak",
+                        "icon": "ability_rogue_preyontheweak",
+                        "description": "Enemies disabled with your Kidney Shot, Cheap Shot, Gouge, Sap, or Blind take 10% increased damage from all sources.",
+                        "castTime": "Passive"
+                    }
+                },
+                {
+                    "tier": 5,
+                    "column": 1,
+                    "spell": {
+                        "id": 137619,
+                        "name": "Marked for Death",
+                        "icon": "achievement_bg_killingblow_berserker",
+                        "description": "Mark the target, instantly generating 5 combo points.  Cooldown reset if the target dies within 1 min.",
+                        "range": "30 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "1 min cooldown"
+                    }
+                },
+                {
+                    "tier": 6,
+                    "column": 1,
+                    "spell": {
+                        "id": 152151,
+                        "name": "Shadow Reflection",
+                        "icon": "rogue_shadow_reflection",
+                        "description": "Summon a shadow of yourself on the target that will watch you and memorize your offensive ability usage for the next 8 sec. After this time, it will mimic the memorized abilities on its target over the next 8 sec.",
+                        "range": "20 yd range",
+                        "castTime": "Instant",
+                        "cooldown": "2 min cooldown"
+                    }
+                }
+            ],
+            "glyphs": {
+                "major": [
+                    {
+                        "glyph": 392,
+                        "item": 0,
+                        "name": "Glyph of Ambush",
+                        "icon": "ability_rogue_ambush"
+                    },
+                    {
+                        "glyph": 407,
+                        "item": 42970,
+                        "name": "Glyph of Hemorrhaging Veins",
+                        "icon": "spell_holy_sealofsacrifice"
+                    },
+                    {
+                        "glyph": 731,
+                        "item": 0,
+                        "name": "Glyph of Deadly Momentum",
+                        "icon": "ability_rogue_deadlymomentum"
+                    }
+                ],
+                "minor": [
+                    {
+                        "glyph": 469,
+                        "item": 43380,
+                        "name": "Glyph of Poisons",
+                        "icon": "trade_brewpoison"
+                    },
+                    {
+                        "glyph": 468,
+                        "item": 43379,
+                        "name": "Glyph of Blurred Speed",
+                        "icon": "ability_rogue_sprint"
+                    },
+                    {
+                        "glyph": 467,
+                        "item": 43378,
+                        "name": "Glyph of Safe Fall",
+                        "icon": "inv_feather_01"
+                    }
+                ]
+            },
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "calcTalent": "2221011",
+            "calcSpec": "b",
+            "calcGlyph": "aTNPkQ"
+        }
+    ],
+    "totalHonorableKills": 40742
+}

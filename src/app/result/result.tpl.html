@@ -1,0 +1,522 @@
+<section class="results">
+	<div class="result-element" data-ng-repeat="element in list">
+		<div class="char-name">
+			<div class="sigil"></div>
+			<div class="name">{{ element.name }}
+				<span class="guild">{{ element.guild.name }}</span>
+				<span class="iLvl">iLvl: {{ element.items.averageItemLevelEquipped }}</span>
+			</div>
+		</div>
+		<div class="top" data-ng-style="setBackground(element.thumbnail)">
+			<div class="left">
+				<a class="item item-big tooltipcontainer">
+					<div class="tooltip tooltip-big" data-ng-show="element.items.head">
+						<span class="tooltip-title color{{element.items.head.quality}}">{{element.items.head.name}}</span>
+						<br />
+						<span class="tooltip-ilvl">Item level: {{element.items.head.itemLevel}}</span>
+					</div>
+					<div class="item item-big">
+						<div class="image-placeholder borderColor{{element.items.head.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.head.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.neck">
+							<span class="tooltip-title color{{element.items.neck.quality}}">{{element.items.neck.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.neck.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.neck.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.neck.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.shoulder">
+							<span class="tooltip-title color{{element.items.shoulder.quality}}">{{element.items.shoulder.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.shoulder.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.shoulder.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.shoulder.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.back">
+							<span class="tooltip-title color{{element.items.back.quality}}">{{element.items.back.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.back.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.back.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.back.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.chest">
+							<span class="tooltip-title color{{element.items.chest.quality}}">{{element.items.chest.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.chest.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.chest.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.chest.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.shirt">
+							<span class="tooltip-title color{{element.items.shirt.quality}}">{{element.items.shirt.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.shirt.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.shirt.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.shirt.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.tabard">
+							<span class="tooltip-title color{{element.items.tabard.quality}}">{{element.items.tabard.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.tabard.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.tabard.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.tabard.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.wrist">
+							<span class="tooltip-title color{{element.items.wrist.quality}}">{{element.items.wrist.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.wrist.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.wrist.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.wrist.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="right">
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.hands">
+							<span class="tooltip-title color{{element.items.hands.quality}}">{{element.items.hands.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.hands.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.hands.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.hands.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.waist">
+							<span class="tooltip-title color{{element.items.waist.quality}}">{{element.items.waist.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.waist.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.waist.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.waist.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.legs">
+							<span class="tooltip-title color{{element.items.legs.quality}}">{{element.items.legs.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.legs.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.legs.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.legs.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.feet">
+							<span class="tooltip-title color{{element.items.feet.quality}}">{{element.items.feet.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.feet.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.feet.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.feet.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.finger1">
+							<span class="tooltip-title color{{element.items.finger1.quality}}">{{element.items.finger1.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.finger1.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.finger1.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.finger1.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.finger2">
+							<span class="tooltip-title color{{element.items.finger2.quality}}">{{element.items.finger2.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.finger2.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.finger2.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.finger2.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.trinket1">
+							<span class="tooltip-title color{{element.items.trinket1.quality}}">{{element.items.trinket1.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.trinket1.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.trinket1.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.trinket1.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-big" data-ng-show="element.items.trinket2">
+							<span class="tooltip-title color{{element.items.trinket2.quality}}">{{element.items.trinket2.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.trinket2.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.trinket2.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.trinket2.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="info">
+				<div class="item item-big spesialization" data-ng-show="element.talents[0].selected">
+					<div class="image-placeholder">
+						<img data-ng-src="http://media.blizzard.com/wow/icons/36/{{ element.talents[0].spec.icon }}.jpg" onerror="this.style.display='none'">
+					</div>
+				</div>
+				<div class="item item-big spesialization" data-ng-show="element.talents[1].selected">
+					<div class="image-placeholder">
+						<img data-ng-src="http://media.blizzard.com/wow/icons/36/{{ element.talents[1].spec.icon }}.jpg" onerror="this.style.display='none'">
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-wep" data-ng-show="element.items.mainHand">
+							<span class="tooltip-title color{{element.items.mainHand.quality}}">{{element.items.mainHand.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.mainHand.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.mainHand.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.mainHand.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+				<a class="tooltipcontainer">
+					<div class="item item-big">
+						<div class="tooltip tooltip-wep" data-ng-show="element.items.offHand">
+							<span class="tooltip-title color{{element.items.offHand.quality}}">{{element.items.offHand.name}}</span>
+							<br />
+							<span class="tooltip-ilvl">Item level: {{element.items.offHand.itemLevel}}</span>
+						</div>
+						<div class="image-placeholder borderColor{{element.items.offHand.quality}}">
+							<img data-ng-src="http://media.blizzard.com/wow/icons/56/{{ element.items.offHand.icon }}.jpg" onerror="this.style.display='none'">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="bottom-left">
+				<div class="char-stats">
+					<div class="health">
+						<p>Health: <span>{{element.stats.health}}</span></p>
+					</div>
+					<div class="general">
+						<p class="title">General</p>
+						<table>
+							<tr>
+								<td class="first armory-orange">Agility:</td>
+								<td class="second armory-white">{{element.stats.agi}}</td>
+							</tr>
+						</table>
+					</div>
+					<div class="other">
+						<p class="title">Other</p>
+						<table>
+							<tr>
+								<td class="first armory-orange">Multistrike:</td>
+								<td class="second armory-white">{{element.stats.multistrikeRatingBonus | number : 2}}%</td>
+							</tr>
+							<tr>
+								<td class="first armory-orange">Crit:</td>
+								<td class="second armory-white">{{element.stats.critRating }}</td>
+							</tr>
+							<tr>
+								<td class="first armory-orange">Haste:</td>
+								<td class="second armory-white">{{element.stats.hasteRating }}</td>
+							</tr>
+							<tr>
+								<td class="first armory-orange">Mastery:</td>
+								<td class="second armory-white">{{element.stats.masteryRating }}</td>
+							</tr>
+							<tr>
+								<td class="first armory-orange">Versatility:</td>
+								<td class="second armory-white">{{element.stats.versatility }}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-right">
+				<div class="glyphs" data-ng-show="element.talents[0].selected">
+					<div class="glyph-group">
+						<p>Major Glyphs</p>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.major[0].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.major[0].icon}}.jpg" onerror="this.style.display='none'">
+							<span class="info">Text</span>
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.major[1].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.major[1].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.major[2].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.major[2].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+					</div>
+					<div class="glyph-group">
+						<p>Minor Glyphs</p>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.minor[0].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.minor[0].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.minor[1].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.minor[1].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].glyphs.minor[2].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].glyphs.minor[2].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+					</div>
+				</div>
+				<div class="glyphs" data-ng-show="element.talents[1].selected">
+					<div class="glyph-group">
+						<p>Major Glyphs</p>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.major[0].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.major[0].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.major[1].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.major[1].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.major[2].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.major[2].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+					</div>
+					<div class="glyph-group">
+						<p>Minor Glyphs</p>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.minor[0].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.minor[0].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.minor[1].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.minor[1].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].glyphs.minor[2].name}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].glyphs.minor[2].icon}}.jpg" onerror="this.style.display='none'">
+						</a>
+					</div>
+				</div>
+				<div class="talents" data-ng-show="element.talents[0].selected">
+					<p>Talents</p>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[0].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[0].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[0].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[0].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[1].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[1].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[1].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[1].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[2].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[2].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[2].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[2].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[3].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[3].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[3].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[3].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[4].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[4].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[4].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[4].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent" data-ng-show="element.talents[1].selected">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[5].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[5].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[5].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[5].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[0].talents[6].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[0].talents[6].spell.description}}</span>
+							</div>							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[0].talents[6].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[0].talents[6].spell.name}}</p>
+						</a>
+					</div>
+				</div>
+				<div class="talents" data-ng-show="element.talents[1].selected">
+					<p>Talents</p>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[0].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[0].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[0].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[0].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[1].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[1].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[1].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[1].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[2].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[2].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[2].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[2].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[3].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[3].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[3].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[3].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[4].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[4].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[4].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[4].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[5].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[5].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[5].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[5].spell.name}}</p>
+						</a>
+					</div>
+					<div class="talent">
+						<a class="item item-small glyph tooltipcontainer">
+							<div class="tooltip tooltip-small">
+								<span class="tooltip-title color">{{element.talents[1].talents[6].spell.name}}</span><br />
+								<span class="tooltip-text">{{element.talents[1].talents[6].spell.description}}</span>
+							</div>
+							<img data-ng-src="http://media.blizzard.com/wow/icons/18/{{element.talents[1].talents[6].spell.icon}}.jpg" onerror="this.style.display='none'">
+							<p class="talent-name">{{element.talents[1].talents[6].spell.name}}</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
